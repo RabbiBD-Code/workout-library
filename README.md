@@ -37,3 +37,28 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 # My projects name: workout-library
+
+**Description**
+
+This is a responsive fitness workout management web application where users can explore exercises, create and manage their workout plans, save favorite exercises, and sort workouts based on duration, calories burned, or rating. The application provides a simple and user-friendly interface for organizing workout routines.
+
+# Technologies Used
+**Next.js
+React
+TypeScript
+Tailwind CSS
+DaisyUI
+React Context API
+LocalStorage**
+
+**Features**
+Workout Exercise Library
+Users can browse a collection of exercises with details such as duration, calories burned, difficulty, equipment, muscle groups, sets, and reps.
+Create & Manage Workout Plans
+Users can add exercises to their personal workout plan and manage their selected exercises.
+Save Favorite Exercises
+Users can save exercises for quick access and remove them whenever needed.
+Workout Sorting
+Users can sort exercises by duration, calories burned, or rating.
+Persistent Data with LocalStorage
+Saved exercises and workout plan data are stored in localStorage, so the data remains available even after refreshing or reopening the page.
