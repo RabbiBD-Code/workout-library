@@ -12,7 +12,7 @@ interface IBookDetailsPageProps{
 }
 
 const getLibraryData = async(Id:string)=>{
-    const res = await fetch(`https://api.abcz.workers.dev/api/fitlog/${Id}`)
+    const res = await fetch(`https://api.api-store.workers.dev/api/fitlog/${Id}`)
     return res.json()
 }
 

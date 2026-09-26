@@ -16,7 +16,9 @@ const {plan, setPlan} = useContext(LibarayContext)
         setPlan(remove)
     }
     const handleMarkDone = () =>{
+      const remove = plan.filter(save => save.id !== p.id);
       toast.success('Mark as Done')
+      setPlan(remove)
     }
 
     return (
@@ -64,11 +66,11 @@ const {plan, setPlan} = useContext(LibarayContext)
       </div>
 
       {/* Actions */}
-      <div className="flex shrink-0 items-center gap-3">
+      <div className=" md:flex shrink-0 items-center gap-3">
         <Link href={`/workouts/${p.id}`}>
           <button
           type="button"
-          className="rounded-full border border-gray-600 px-4 py-2 text-xs text-gray-300 transition hover:border-gray-400 hover:text-white"
+          className="ml-5 my-2 md: rounded-full border border-gray-600 px-4 py-2 text-xs text-gray-300 transition hover:border-gray-400 hover:text-white"
         >
           View Details
         </button>
@@ -86,7 +88,7 @@ const {plan, setPlan} = useContext(LibarayContext)
         <button
         onClick={()=> handleRemoveButton()}
           type="button"
-          className="ml-1 text-lg text-gray-500 transition hover:text-white"
+          className="ml-15 md:ml-1 text-lg text-gray-500 transition hover:text-white"
         >
           ×
         </button>

@@ -17,7 +17,9 @@ const SavedCard = ({s}:{s:ILibary}) => {
         setSaved(remove)
     }
     const handleMarkDone = () =>{
+          const remove = saved.filter(save => save.id !== s.id)
           toast.success('Mark as Done')
+          setSaved(remove)
         }
 
     return (
@@ -65,11 +67,11 @@ const SavedCard = ({s}:{s:ILibary}) => {
       </div>
 
       {/* Actions */}
-      <div className="flex shrink-0 items-center gap-3">
+      <div className="md:flex shrink-0 items-center gap-3">
         <Link href={`/workouts/${s.id}`}>
         <button
           type="button"
-          className="rounded-full border border-gray-600 px-4 py-2 text-xs text-gray-300 transition hover:border-gray-400 hover:text-white"
+          className="ml-5 my-2 md: rounded-full border border-gray-600 px-4 py-2 text-xs text-gray-300 transition hover:border-gray-400 hover:text-white"
         >
           View Details
         </button>
@@ -87,7 +89,7 @@ const SavedCard = ({s}:{s:ILibary}) => {
         <button
         onClick={()=> handleRemoveButton()}
           type="button"
-          className="ml-1 text-lg text-gray-500 transition hover:text-white"
+          className="ml-15 md:ml-1 text-lg text-gray-500 transition hover:text-white"
         >
           ×
         </button>

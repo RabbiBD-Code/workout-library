@@ -4,13 +4,15 @@ import { ILibary } from '@/types/libaray';
 import React from 'react';
 
 const getLibraryData = async () => {
-  const res = await fetch("https://api.abcz.workers.dev/api/fitlog");
+  const res = await fetch("https://api.api-store.workers.dev/api/fitlog");
   return res.json();
-};
+}
+
 
 
 const WorkoutsPage = async() => {
     const fitlogs = await getLibraryData();
+    
   console.log(fitlogs);
     return (
         <div>
