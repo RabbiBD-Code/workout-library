@@ -24,13 +24,7 @@ const PlanButton = ({ exercise }: PlanButtonProps) => {
   };
 
   return (
-    <button
-      onClick={() => handlePlanButton()}
-      className="flex h-9 items-center gap-2 rounded-lg bg-[#baff00] px-4 text-[11px] font-bold text-black"
-    >
-      <span className="font-bold text-2xl">▣</span>
-      Add to today&apos;s plan
-    </button>
+    
   );
 };
 
