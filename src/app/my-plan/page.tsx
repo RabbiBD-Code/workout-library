@@ -100,7 +100,7 @@ const MyPlanPage = () => {
         <input
           type="radio"
           name="my_tabs_6"
-          className={`tab ${activeTab === "plan"? "text-[#CCFF00]":''}`}
+          className={`tab ${activeTab === "saved"? "text-[#CCFF00]":''}`}
           aria-label="Saved Plan"
           checked={activeTab === "saved"}
           onChange={() => setActiveTab("saved")}
