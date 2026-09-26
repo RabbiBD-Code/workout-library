@@ -86,13 +86,7 @@ const SavedCard = ({s}:{s:ILibary}) => {
           Mark as Done
         </button>
 
-        <button
-        onClick={()=> handleRemoveButton()}
-          type="button"
-          className="ml-15 md:ml-1 text-lg text-gray-500 transition hover:text-white"
-        >
-          ×
-        </button>
+        
       </div>
     </div>
   );
