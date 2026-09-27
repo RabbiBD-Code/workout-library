@@ -21,12 +21,16 @@ const PlanButton = ({ exercise }: PlanButtonProps) => {
     }
     toast.success(`Add a plan ${exercise.name}`);
     setPlan([...plan, exercise]);
+    if(plan.length >= 5){
+      toast.error("Added to day's Five plan")
+    }
   };
 
   return (
     <button
+      disabled = {plan.length >= 5}
       onClick={() => handlePlanButton()}
-      className="flex h-9 items-center gap-2 rounded-lg bg-[#baff00] px-4 text-[11px] font-bold text-black"
+      className="flex h-9 items-center gap-2 rounded-lg bg-[#baff00] px-4 text-[11px] font-bold text-black disabled:bg-[#ef700f] disabled:cursor-not-allowed"
     >
       <span className="font-bold text-2xl">▣</span>
       Add to today&apos;s plan
